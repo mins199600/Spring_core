@@ -51,4 +51,6 @@ public class ApplicationContextSameBeanFindTest {
             return new MemoryMemberRepository();
         }
     }
+    // 의존성주입이 뭐지
+    //
 }

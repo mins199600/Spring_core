@@ -1,5 +1,6 @@
 package hello.core;
 
+import hello.core.member.Grade;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
