@@ -6,6 +6,8 @@ import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 
 class RateDiscountPolicyTest {
     //진짜 10프로 할인이 가능한지 테스트 클래스
@@ -16,7 +18,7 @@ class RateDiscountPolicyTest {
     void vip_o() {
         Member member = new Member(1L,"memberVIP", Grade.VIP);
         int discount = discountPolicy.discount(member,10000);
-        Assertions.assertThat(discount).isEqualTo(1000);
+        assertThat(discount).isEqualTo(1000);
     }
 
     @Test
@@ -24,6 +26,6 @@ class RateDiscountPolicyTest {
     void vip_x() {
         Member member = new Member(1L, "memberBASIC", Grade.BASIC);
         int discount = discountPolicy.discount(member, 10000);
-        Assertions.assertThat(discount).isEqualTo(1000);
+        assertThat(discount).isEqualTo(1000);
     }
-}
+}//주문을 외워라 호이이이잇!!! 호이이이잇!!
