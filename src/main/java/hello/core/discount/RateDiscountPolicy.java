@@ -1,10 +1,11 @@
 package hello.core.discount;
+import hello.core.annotation.MainDiscountPolicy;
 import hello.core.member.Grade;
 import hello.core.member.Member;
 import org.springframework.stereotype.Component;
 
 @Component
-//컴포넌트 스캔으로 인해 빈 자동등록
+@MainDiscountPolicy
 public class RateDiscountPolicy implements DiscountPolicy{
 
     private int discountPercent = 10;   //10프로 할인
